@@ -23,8 +23,8 @@ describe('posts.svc', function() {
 				}]);
 		});
 		it('gets two posts', function() {
-			PostsSvc.fetch().success(function(posts) {
-				expect(posts).to.have.length(2);
+			PostsSvc.fetch().then(function(response) {
+				expect(response.data).to.have.length(2);
 			});
 		});
 	});
