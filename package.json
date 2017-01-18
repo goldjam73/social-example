@@ -20,6 +20,7 @@
     "blanket": "^1.2.3",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
+    "gulp-uglify": "^2.0.0",
     "jshint": "^2.9.4",
     "jsonwebtoken": "^7.2.1",
     "karma": "^1.3.0",
