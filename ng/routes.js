@@ -9,7 +9,7 @@ angular.module('app')
 				templateUrl: 'register.html'
 			})
 			.when('/login', {
-				controller: 'LoginCtrl',
-				templateUrl: 'login.html'
+				template: '<login on-update="$ctrl.login(value)"></login>'
 			});
 	});
+	
