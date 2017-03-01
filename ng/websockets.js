@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('social-app')
 	.run(function($rootScope, $timeout) {
 		function webSocketHost() {
 			if (window.location.host === "https:"){

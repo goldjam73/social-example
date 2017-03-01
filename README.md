@@ -1,11 +1,11 @@
 # Social MEAN
 Originally a simple twitter style web app built on the MEAN stack (Angular 1.2). 
-Now in the process of converting to an Angular 1.5 component based app.
+Now in the process of converting to an Angular 1.5 component based app and completing the functionality.
 
 
 # @TODOS
-* Convert top level app directive to component.
 * Move top level nav bar into a component.
+* Handle authorisation errors and unauthorised post.
 * Create sub components for repeated elements (potentially stateless).
 * Create component and functionality for a registration page.
 * Improve test coverage, especially end to end and Karma tests.

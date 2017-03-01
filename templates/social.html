@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default">
+	<div class="container">
+		<ul class="nav navbar-nav">
+			<li><a class="posts" href="/#/">Posts</a></li>
+		</ul>
+		<ul ng-if='!$ctrl.currentUser' class="nav navbar-nav navbar-right">
+			<li><a class="register" href="/#/register">Register</a></li>
+			<li><a class="login" href="/#/login">Login</a></li>
+		</ul>
+		<ul ng-if='$ctrl.currentUser' class="nav navbar-nav navbar-right">
+			<li><a class="logout" href="#" ng-click='$ctrl.logout()'>Logout</a></li>
+		</ul>
+		<p ng-if='$ctrl.currentUser' class="navbar-text navbar-right">
+			Signed in as {{$ctrl.currentUser.username}}
+		</p>
+	</div>
+</nav>
+<div ng-view></div>

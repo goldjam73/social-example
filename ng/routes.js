@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('social-app')
 	.config(function($routeProvider) {
 		$routeProvider
 			.when('/', {

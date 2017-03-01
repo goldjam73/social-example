@@ -9,7 +9,7 @@ function PostInputController() {
 	};
 }
 
-angular.module('app')
+angular.module('social-app')
 	.component('postInput', {
 		controller: PostInputController,
 		templateUrl: 'postinput.html',

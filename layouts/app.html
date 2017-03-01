@@ -5,25 +5,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="/app.css">
 </head>
-<body ng-app="app" ng-controller="ApplicationCtrl">
-	<nav class="navbar navbar-default">
-		<div class="container">
-			<ul class="nav navbar-nav">
-				<li><a class="posts" href="/#/">Posts</a></li>
-			</ul>
-			<ul ng-if='!currentUser' class="nav navbar-nav navbar-right">
-				<li><a class="register" href="/#/register">Register</a></li>
-				<li><a class="login" href="/#/login">Login</a></li>
-			</ul>
-			<ul ng-if='currentUser' class="nav navbar-nav navbar-right">
-				<li><a class="logout" href="#" ng-click='logout()'>Logout</a></li>
-			</ul>
-			<p ng-if='currentUser' class="navbar-text navbar-right">
-				Signed in as {{currentUser.username}}
-			</p>
-		</div>
-	</nav>
-	<div ng-view></div>
+<body ng-app="social-app">
+	<social></social>
 		
 	<script src="/angular/angular.js"></script>
     <script src="/angular-route/angular-route.js"></script>

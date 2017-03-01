@@ -11,7 +11,7 @@ function LoginController($location, UserSvc) {
 	};
 }
 
-angular.module('app')
+angular.module('social-app')
 	.component('login', {
 		controller: LoginController,
 		templateUrl: 'login.html',

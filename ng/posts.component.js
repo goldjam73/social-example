@@ -10,7 +10,7 @@ function PostsController($scope, PostsSvc) {
 	};
 
 	$scope.$on('ws:new_post', function(_, post) {
-		vm.$apply(function() {
+		$scope.$apply(function() {
 			vm.posts.unshift(post);
 		});
 	});
@@ -20,7 +20,7 @@ function PostsController($scope, PostsSvc) {
 	});
 }
 
-angular.module('app')
+angular.module('social-app')
 	.component('posts', {
 		controller: PostsController,
 		templateUrl: 'posts.html'

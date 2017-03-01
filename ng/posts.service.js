@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('social-app')
 	.service('PostsSvc',
 		function($http) {
 			this.fetch = function() {

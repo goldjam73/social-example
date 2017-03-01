@@ -1,4 +1,4 @@
-angular.module('app')
+angular.module('social-app')
 	.service('UserSvc', function($http) {
 		var svc = this;
 		svc.getUser = function() {
