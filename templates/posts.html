@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>Recent Posts</h1>
-	<post-input post-body="$ctrl.postBody" on-update="$ctrl.addPost(value)"></post-input>
+	<post-input on-update="$ctrl.addPost(value)"></post-input>
 	<ul class="list-group">
 		<post-item ng-repeat='post in $ctrl.posts' post='post'></post-item>
 	</ul>

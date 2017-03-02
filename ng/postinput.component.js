@@ -1,10 +1,12 @@
 function PostInputController() {
 	var vm = this;
+	vm.postBody = '';
 	vm.addPost = function() {
-		if (vm.postBody !== null) {
+		if (vm.postBody !== '') {
 			vm.onUpdate({
 				value: vm.postBody
 			});
+			vm.postBody = '';
 		}
 	};
 }
@@ -14,7 +16,6 @@ angular.module('social-app')
 		controller: PostInputController,
 		templateUrl: 'postinput.html',
 		bindings: {
-			postBody: '<',
 			onUpdate: '&'
 		}
 	});

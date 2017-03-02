@@ -1,11 +1,8 @@
 function PostsController($scope, PostsSvc) {
 	var vm = this;
-	vm.postBody = null;
 	vm.addPost = function(value) {
 		PostsSvc.create({
 			body: value
-		}).then(function() {
-			vm.postBody = null;
 		});
 	};
 
